@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs color change</title>
+    <script src="index.js"></script>
+</head>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        cursor: pointer;
+    }
+
+    .container div {
+        height: 100px;
+    }
+
+    .first-div {
+        background-color: aqua;
+    }
+
+    .second-div {
+        background-color: brown;
+    }
+
+    .third-div {
+        background-color: blueviolet;
+    }
+
+    .fourth-div {
+        background-color: cadetblue;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="color1" class="first-div" onclick="changeColor1()"></div>
+        <div id="color2" class="second-div" onclick="changeColor2()"></div>
+        <div id="color3" class="third-div" onclick="changeColor3()"></div>
+        <div id="color4" class="fourth-div" onclick="changeColor4()"></div>
+    </div>
+</body>
+
+</html>
